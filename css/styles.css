@@ -1,0 +1,97 @@
+/* GOLBAL STYLES */
+:root {
+    --primary-bg-color: rgb(210, 210, 228);
+    --primary-button-color: #2793F2;
+    --secundary-button-color: #107ad7;
+    --color-white: white;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: var(--primary-bg-color);
+}
+html {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+/* HEADER */
+header h1 {
+    text-align: center;
+    margin: 3rem 0;
+    text-transform: uppercase;
+}
+.links-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    text-align: center;
+} .links-nav a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--color-white);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 6rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+/* MAIN */
+
+/* cards */
+.cont-cards {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin: auto;
+    gap: 4rem;
+}
+.card {
+    width: 30rem;
+    height: 25rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.img-container {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} .img-container img {
+    width: 150%; 
+    height: 150%;
+    object-fit: cover; 
+    object-position: center -1rem;
+} 
+.img-air img {
+    width: 1760% ;
+    height: 160%;
+    object-position: center 1rem;
+}
+.card h3 {
+    padding: 1rem 0 ;
+} .btn-card {
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--primary-button-color);
+    text-align: center;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: var(--color-white);
+} .btn-card:hover {
+    background-color: var(--secundary-button-color);
+}

@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="es" class=" ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="es" class="ie7"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!--> <html lang="es"> <!--<![endif]-->
+<head>
+
+<meta property="fb:admins" content="1042432608" />
+<meta name="blogcatalog" content="9BC8851836" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta HTTP-EQUIV="Content-Language" CONTENT="es-AR"><META HTTP-EQUIV="Language" CONTENT="es-AR"><META NAME="Designer" CONTENT="Scientia Soluciones Informaticas"><META NAME="Revisit-After" CONTENT="5 days Days">
+
+<link rel="stylesheet" type="text/css" href="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/themes/scientia%20v3/style.css" media="screen" />
+<link rel="icon" href="https://scientiait.blob.core.windows.net/programandoamedianoche/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://scientiait.blob.core.windows.net/programandoamedianoche/favicon.ico" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css?family=El+Messiri|Hind+Siliguri|Ubuntu:400,400i,700,700i" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v24.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Barra de progreso en el ícono de la aplicación en la barra de tareas de Windows® 7 - Programando a medianoche</title>
+	<meta name="description" content="Cómo agregar una barra de progreso en el ícono de tu aplicación en la barra de tareas." />
+	<link rel="canonical" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Barra de progreso en el ícono de la aplicación en la barra de tareas de Windows® 7 - Programando a medianoche" />
+	<meta property="og:description" content="Cómo agregar una barra de progreso en el ícono de tu aplicación en la barra de tareas." />
+	<meta property="og:url" content="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/" />
+	<meta property="og:site_name" content="Programando a medianoche" />
+	<meta property="article:publisher" content="https://www.facebook.com/ScientiaIT" />
+	<meta property="article:published_time" content="2009-09-16T02:46:16+00:00" />
+	<meta property="article:modified_time" content="2020-10-08T15:11:35+00:00" />
+	<meta property="og:image" content="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/progress-bar-square1.jpg" />
+	<meta property="og:image:width" content="1620" />
+	<meta property="og:image:height" content="1620" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Gustavo Cantero (The Wolf)" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@ScientiaIT" />
+	<meta name="twitter:site" content="@ScientiaIT" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Gustavo Cantero (The Wolf)" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="6 minutos" />
+	<script data-jetpack-boost="ignore" type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#article","isPartOf":{"@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/"},"author":{"name":"Gustavo Cantero (The Wolf)","@id":"https://www.programandoamedianoche.com/#/schema/person/9147eb7441a97d8a1bfda4d85f3bfba0"},"headline":"Barra de progreso en el ícono de la aplicación en la barra de tareas de Windows® 7","datePublished":"2009-09-16T02:46:16+00:00","dateModified":"2020-10-08T15:11:35+00:00","mainEntityOfPage":{"@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/"},"wordCount":1150,"commentCount":1,"publisher":{"@id":"https://www.programandoamedianoche.com/#organization"},"image":{"@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#primaryimage"},"thumbnailUrl":"https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/progress-bar-square1.jpg","articleSection":["Windows Forms","WPF"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#respond"]}]},{"@type":"WebPage","@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/","url":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/","name":"Barra de progreso en el ícono de la aplicación en la barra de tareas de Windows® 7 - Programando a medianoche","isPartOf":{"@id":"https://www.programandoamedianoche.com/#website"},"primaryImageOfPage":{"@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#primaryimage"},"image":{"@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#primaryimage"},"thumbnailUrl":"https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/progress-bar-square1.jpg","datePublished":"2009-09-16T02:46:16+00:00","dateModified":"2020-10-08T15:11:35+00:00","description":"Cómo agregar una barra de progreso en el ícono de tu aplicación en la barra de tareas.","breadcrumb":{"@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#primaryimage","url":"https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/progress-bar-square1.jpg","contentUrl":"https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/progress-bar-square1.jpg","width":1620,"height":1620},{"@type":"BreadcrumbList","@id":"https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://www.programandoamedianoche.com/"},{"@type":"ListItem","position":2,"name":"Barra de progreso en el ícono de la aplicación en la barra de tareas de Windows® 7"}]},{"@type":"WebSite","@id":"https://www.programandoamedianoche.com/#website","url":"https://www.programandoamedianoche.com/","name":"Programando a medianoche","description":"El blog de Scientia® Soluciones Informáticas","publisher":{"@id":"https://www.programandoamedianoche.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.programandoamedianoche.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https://www.programandoamedianoche.com/#organization","name":"Scientia Soluciones Informáticas","url":"https://www.programandoamedianoche.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.programandoamedianoche.com/#/schema/logo/image/","url":"https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2018/12/Isotipo.png","contentUrl":"https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2018/12/Isotipo.png","width":775,"height":468,"caption":"Scientia Soluciones Informáticas"},"image":{"@id":"https://www.programandoamedianoche.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/ScientiaIT","https://x.com/ScientiaIT","https://www.linkedin.com/company/scientia-it/"]},{"@type":"Person","@id":"https://www.programandoamedianoche.com/#/schema/person/9147eb7441a97d8a1bfda4d85f3bfba0","name":"Gustavo Cantero (The Wolf)","image":{"@type":"ImageObject","inLanguage":"es","@id":"https://www.programandoamedianoche.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/9d3ea74abbb1010810d7e8c559be8957?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/9d3ea74abbb1010810d7e8c559be8957?s=96&d=mm&r=g","caption":"Gustavo Cantero (The Wolf)"},"description":"Me llamo Gustavo Cantero, vivo en Buenos Aires, Argentina, con mi esposa e hijas y trabajo en Scientia Soluciones Informáticas, una empresa de consultoría informática y desarrollo de software y programación web que, junto con Darío Krapp, fundamos a fines de 2007. Mi experiencia con las computadoras comenzó en la década del 80, con mi primer ordenador: el ZX Spectrum. Pese a que el mismo tenía una escasa memoria de 48 Kb y como lenguaje un BASIC muy reducido, tengo muy buenos recuerdos de los programas que creaba en él cuando aún no cumplía mis 10 años. Ya a los 17 años conseguí mi primer empleo como programador y desde ese momento, y hasta ahora, he utilizado varias tecnologías y desarrollado en distintos lenguajes con variadas herramientas, entre los cuales se encuentran COBOL, Clipper, FoxPro, QuickBasic, Visual FoxPro, Visual Basic, ASP con VBScript, GeneXus, Visual Basic .NET, C# y C. Desde el primer momento que tuve contacto con una computadora (en 1984) y hasta este momento hay algo que nunca cambió: me apasiona la tecnología y trato de entenderla y utilizar lo mejor que pueda.","sameAs":["http://www.gustavo-cantero.com.ar"],"url":"https://www.programandoamedianoche.com/author/gcantero/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel='dns-prefetch' href='//fundingchoicesmessages.google.com' />
+<link rel='preconnect' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Programando a medianoche &raquo; Feed" href="https://www.programandoamedianoche.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Programando a medianoche &raquo; Feed de los comentarios" href="https://www.programandoamedianoche.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Programando a medianoche &raquo; Comentario Barra de progreso en el ícono de la aplicación en la barra de tareas de Windows® 7 del feed" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/feed/" />
+
+<link rel='stylesheet' id='all-css-b248c9e4099656082eeb2fa5a78d22b4' href='https://www.programandoamedianoche.com/wp-content/boost-cache/static/c4ce12871a.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='screen-css-816f4ccf8415ffc30c5a28c205687f46' href='https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/taxonomy-images/css/style.css?m=1569318334' type='text/css' media='screen' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='jetpack-sharing-buttons-style-inline-css'>
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='akismet-widget-style-inline-css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link data-service="google-fonts" data-category="marketing" crossorigin="anonymous" rel='stylesheet' id='grisialle-fonts-css' data-href='https://fonts.googleapis.com/css?family=Marvel%7CBigshot+One&#038;ver=a34fa2258e0d811e09b85f8421741221' media='all' />
+
+
+
+<!-- Fragmento de código de la etiqueta de Google (gtag.js) añadida por Site Kit -->
+
+<!-- Fragmento de código de Google Analytics añadido por Site Kit -->
+
+
+
+<!-- Finalizar fragmento de código de la etiqueta de Google (gtags.js) añadida por Site Kit -->
+<link rel="https://api.w.org/" href="https://www.programandoamedianoche.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.programandoamedianoche.com/wp-json/wp/v2/posts/620" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.programandoamedianoche.com/xmlrpc.php?rsd" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.programandoamedianoche.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.programandoamedianoche.com%2F2009%2F09%2Fprogreso-en-el-icono-de-la-aplicacion-en-windows-7%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.programandoamedianoche.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.programandoamedianoche.com%2F2009%2F09%2Fprogreso-en-el-icono-de-la-aplicacion-en-windows-7%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.148.0" />	<style>img#wpstats{display:none}</style>
+					<style>.cmplz-hidden {
+					display: none !important;
+				}</style>
+<!-- Metaetiquetas de Google AdSense añadidas por Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- Acabar con las metaetiquetas de Google AdSense añadidas por Site Kit -->
+	<style type="text/css">
+		#site-title.grisaille-header-image {
+			background: url() 0 0 no-repeat;			
+		}
+        #site-title {
+			margin: 20px 0;        
+			min-height: 200px;
+	 	}
+		#site-title h1 a {
+		 	color: #ffffff;
+		 	min-height: 200px;
+        }
+		#site-description {
+			color: #ffffff;
+		}
+ 			</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/themes/scientia%20v3/images/background.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+	<link rel="amphtml" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/amp/">
+<!-- Fragmento de código de Google Tag Manager añadido por Site Kit -->
+
+
+<!-- Final del fragmento de código de Google Tag Manager añadido por Site Kit -->
+
+<!-- Fragmento de código de Google Adsense añadido por Site Kit -->
+
+
+<!-- Final del fragmento de código de Google Adsense añadido por Site Kit -->
+<link rel="icon" href="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2023/02/cropped-pam-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2023/02/cropped-pam-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2023/02/cropped-pam-180x180.png" />
+<meta name="msapplication-TileImage" content="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2023/02/cropped-pam-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.content-inline-center {
+	text-align: center;
+}
+
+.content-inline-center > * {
+	display: inline;
+}		</style>
+		</head>
+
+<body data-rsssl=1 data-cmplz=1 class="post-template-default single single-post postid-620 single-format-standard custom-background jps-theme-scientia v3" >
+
+<!-- <div id="canvas"> -->
+ 
+ <div class="social-media">
+					<a href="http://twitter.com/ScientiaIT" target="_blank" class="twitter">Twitter</a>
+		
+					<a href="http://facebook.com/ScientiaIT" target="_blank" class="facebook">Facebook</a>
+		
+
+					<a href="https://www.programandoamedianoche.com/feed/" target="_blank" class="rss">RSS Feed</a>
+			</div><!-- #social-icons-->
+    <ul class="skip">
+      <li><a href=".menu">Skip to navigation</a></li>
+      <li><a href="#primaryContent">Skip to main content</a></li>
+      <li><a href="#secondaryContent">Skip to secondary content</a></li>
+      <li><a href="#footer">Skip to footer</a></li>
+    </ul>
+
+    <div id="header-wrap">
+   		<div id="header">
+   			       		<div id="site-title">
+       						<h1><a href="https://www.programandoamedianoche.com">Programando a medianoche</a></h1>
+				<div id="site-description">El blog de Scientia® Soluciones Informáticas</div>
+           </div>
+  	 </div> <!-- end #header-->
+  <!--by default your pages will be displayed unless you specify your own menu content under Menu through the admin panel-->
+	<div id="top-menu">	<div class="menu-header"><ul id="menu-wptouch-recovered-page-menu" class="menu"><li id="menu-item-2366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2366"><a href="https://www.programandoamedianoche.com/gustavo-cantero/">Gustavo Cantero (The Wolf)</a></li>
+</ul></div></div>
+
+ </div> <!-- end #header-wrap-->
+
+   <!--div id="canvas"-->
+<table id="mainTable"><tr><td valign="top" cellspacing=30>
+   <div id="primaryContent">
+
+    <div id="post-620"  class="post-620 post type-post status-publish format-standard has-post-thumbnail hentry category-windows-forms category-wpf">
+
+
+       <div class="info-container">
+         <h1 class="postTitle" style="flex: 1;">
+   <a href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/" rel="bookmark">Barra de progreso en el ícono de la aplicación en la barra de tareas de Windows® 7</a></h1>
+         <div class="icon-taxonomy">
+           <ul class="taxonomy-images-the-terms"><li><a href="https://www.programandoamedianoche.com/category/net/windows-forms/"><img width="32" height="32" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/win-forms.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" data-attachment-id="3893" data-permalink="https://www.programandoamedianoche.com/win-forms/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/win-forms.png" data-orig-size="32,32" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="win-forms" data-image-description="" data-image-caption="" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/win-forms.png" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/win-forms.png" /></a></li><li><a href="https://www.programandoamedianoche.com/category/net/wpf/"><img width="32" height="32" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/wpf.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" data-attachment-id="3894" data-permalink="https://www.programandoamedianoche.com/wpf/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/wpf.png" data-orig-size="32,32" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="wpf" data-image-description="" data-image-caption="" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/wpf.png" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/09/wpf.png" /></a></li></ul>         </div>
+       </div>
+		 <div class="clearfix"></div>
+	<div class="categoryIcons"></div>
+	<img class="userAvatar" src="https://www.gravatar.com/avatar/9d3ea74abbb1010810d7e8c559be8957?s=38&r=G&d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D70&r=G" title="Gustavo Cantero (The Wolf)" />
+           <p class="theDate"><a href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/" rel="bookmark">martes, 15 de septiembre de 2009 a las 23:46hs</a> por Gustavo Cantero (The Wolf)</p>
+
+    <div class="post-wrap">
+		<p>Los que tienen la posibilidad de utilizar Windows 7 habrán notado que trae varias novedades como la vista en miniatura de las aplicaciones minimizadas al pasar el mouse sobre ellas, que algunas de éstas, como el Windows Media Player, en esa vista poseen botones, y otras como el Internet Explorer utilizan el ícono de la barra de tareas como indicador de progreso (en el IE se utiliza para mostrar el progreso de las descargas). Todas estas características y algunas más que aquí no nombro (por ejemplo, hay una característica gracias a la cual, con un dispositivo de tal sólo u$s 30, se puede medir la luz ambiental y, si lo programamos, se puede cambiar el tema de pantalla dependiendo de la misma) son programables a través de las API del sistema operativo para brindarle a nuestras aplicaciones todas las posibilidades que posee. En este artículo hablaré de la posibilidad de mostrar el progreso de una operación como fondo del ícono de la misma en la barra de tareas.<br />
+Las aplicaciones que corren sobre Windows 7 pueden mostrar el progreso de una tarea que están ejecutando en el ícono de la barra de tareas, evitando de esta manera que el usuario tenga que abrir la ventana de la misma para verificar el estado del proceso. A continuación detallo los posibles estados que se pueden mostrar:</p>
+<table cellspacing="3" align="center">
+<tbody>
+<tr>
+<td><img decoding="async" data-attachment-id="621" data-permalink="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/w7-prg-sinprogreso/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-sinprogreso.gif" data-orig-size="60,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="w7-prg-sinprogreso" data-image-description="" data-image-caption="" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-sinprogreso.gif" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-sinprogreso.gif" class="alignnone size-full wp-image-621" title="Aplicación sin barra de progreso" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-sinprogreso.gif" alt="Aplicación sin barra de progreso" width="60" height="40" /></td>
+<td><b>Aplicación sin barra de progreso</b></td>
+</tr>
+<tr>
+<td><img loading="lazy" decoding="async" data-attachment-id="622" data-permalink="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/w7-prg-normal/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-normal.gif" data-orig-size="60,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Aplicación con estado normal" data-image-description="" data-image-caption="&lt;p&gt;Aplicación con estado normal&lt;/p&gt;
+" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-normal.gif" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-normal.gif" class="size-full wp-image-622" title="Aplicación con estado normal" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-normal.gif" alt="Aplicación con estado normal" width="60" height="40" /></td>
+<td><b>Aplicación con estado normal y 50% de progreso</b></td>
+</tr>
+<tr>
+<td><img loading="lazy" decoding="async" data-attachment-id="623" data-permalink="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/w7-prg-pausado/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-pausado.gif" data-orig-size="60,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Aplicación con estado pausado" data-image-description="" data-image-caption="" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-pausado.gif" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-pausado.gif" class="alignnone size-full wp-image-623" title="Aplicación con estado pausado" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-pausado.gif" alt="Aplicación con estado pausado" width="60" height="40" /></td>
+<td><b>Aplicación con estado pausado y 50% de progreso</b></td>
+</tr>
+<tr>
+<td><img loading="lazy" decoding="async" data-attachment-id="624" data-permalink="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/w7-prg-error/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-error.gif" data-orig-size="60,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Aplicación con error" data-image-description="" data-image-caption="" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-error.gif" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-error.gif" class="alignnone size-full wp-image-624" title="Aplicación con error" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-error.gif" alt="Aplicación con error" width="60" height="40" /></td>
+<td><b>Aplicación con error y 50% de progreso</b></td>
+</tr>
+<tr>
+<td><img loading="lazy" decoding="async" data-attachment-id="625" data-permalink="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/w7-prg-indeterminado/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-indeterminado.gif" data-orig-size="60,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Aplicación con estado indeterminado" data-image-description="" data-image-caption="" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-indeterminado.gif" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-indeterminado.gif" class="alignnone size-full wp-image-625" title="Aplicación con estado indeterminado" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/w7-prg-indeterminado.gif" alt="Aplicación con estado indeterminado" width="60" height="40" /></td>
+<td><b>Aplicación con estado indeterminado</b></td>
+</tr>
+</tbody>
+</table>
+<p>Para modificar el estado y el valor de progreso de nuestras aplicaciones podemos utilizar la interfaz ITaskbarList3 como se muestra a continuación</p>
+<pre class="brush: cpp; title: ; notranslate" title="">ITaskbarList3* pTL; //creado anteriormente
+HRESULT hr = pTL-&gt;SetProgressState(hwnd, TBPF_NORMAL); //hwnd es el puntero de la ventana
+pTL-&gt;SetProgressValue(50, 100); //Establecemos un 50% de progreso</pre>
+<p>Para los que desarrollamos en .NET este código en C no nos sirve de mucho, entonces podemos referenciar las clases e interfaces COM o, mejor aún, podemos utilizar las librerías “Windows® API Code Pack for Microsoft® .NET Framework” que ya tienen resuelto este tema. Estas librerías, junto con su código fuente y ejemplos, las podemos bajar de la siguiente dirección: <a title="Windows® API Code Pack for Microsoft® .NET Framework" href="http://code.msdn.microsoft.com/WindowsAPICodePack" target="_blank" rel="noopener noreferrer">http://code.msdn.microsoft.com/WindowsAPICodePack</a>. Para cambiar el estado y progreso de nuestra aplicación debemos utilizar los métodos SetProgressState y SetProgressValue de la clase Microsoft.WindowsAPICodePack.Taskbar.TaskbarManager respectivamente.<br />
+A continuación muestro un ejemplo en WPF de un proyecto en el cual se cambia el progreso de la aplicación modificando el valor de un control Slider, y el estado de la misma a través de un ComboBox. El XAML de éste es el siguiente:</p>
+<pre class="brush: xml; title: ; notranslate" title="">&lt;Window
+    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    x:Class=&quot;TaskBarProgress.Window1&quot;
+    Title=&quot;Ejemplo de barra de progreso en la barra de tareas&quot; Height=&quot;170&quot; Width=&quot;400&quot;
+    WindowStartupLocation=&quot;CenterScreen&quot; WindowStyle=&quot;SingleBorderWindow&quot; MaxHeight=&quot;170&quot;
+    MinHeight=&quot;170&quot; MinWidth=&quot;320&quot; Icon=&quot;Scientia.ico&quot;&gt;
+    &lt;Grid&gt;
+        &lt;Grid.ColumnDefinitions&gt;
+            &lt;ColumnDefinition Width=&quot;Auto&quot; MinWidth=&quot;178&quot; /&gt;
+            &lt;ColumnDefinition /&gt;
+        &lt;/Grid.ColumnDefinitions&gt;
+        &lt;Grid.RowDefinitions&gt;
+            &lt;RowDefinition /&gt;
+            &lt;RowDefinition /&gt;
+            &lt;RowDefinition Height=&quot;Auto&quot; MinHeight=&quot;36&quot; /&gt;
+        &lt;/Grid.RowDefinitions&gt;
+        &lt;TextBlock HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Center&quot; FontSize=&quot;15&quot; FontWeight=&quot;Bold&quot; Margin=&quot;5&quot; Text=&quot;Estado de la aplicación:&quot; /&gt;
+        &lt;ComboBox x:Name=&quot;ComboBox1&quot; Grid.Column=&quot;1&quot; VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Stretch&quot; Margin=&quot;5&quot; SelectionChanged=&quot;ComboBox_SelectionChanged&quot;&gt;
+            &lt;ComboBoxItem&gt;Normal&lt;/ComboBoxItem&gt;
+            &lt;ComboBoxItem&gt;Pausado&lt;/ComboBoxItem&gt;
+            &lt;ComboBoxItem&gt;Con error&lt;/ComboBoxItem&gt;
+            &lt;ComboBoxItem&gt;Indeterminado&lt;/ComboBoxItem&gt;
+            &lt;ComboBoxItem IsSelected=&quot;True&quot;&gt;Sin progreso&lt;/ComboBoxItem&gt;
+        &lt;/ComboBox&gt;
+        &lt;TextBlock HorizontalAlignment=&quot;Right&quot; FontSize=&quot;15&quot; FontWeight=&quot;Bold&quot; Grid.Row=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Text=&quot;Porcentaje de progreso:&quot; Margin=&quot;5&quot; /&gt;
+        &lt;Slider x:Name=&quot;Slider1&quot; Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; VerticalAlignment=&quot;Center&quot; Margin=&quot;5&quot; SmallChange=&quot;1&quot; Maximum=&quot;100&quot; LargeChange=&quot;10&quot; TickPlacement=&quot;Both&quot; TickFrequency=&quot;5&quot; ValueChanged=&quot;Slider_ValueChanged&quot; /&gt;
+        &lt;TextBlock Grid.Row=&quot;2&quot; Grid.ColumnSpan=&quot;2&quot; HorizontalAlignment=&quot;Center&quot; Margin=&quot;10&quot;&gt;&lt;Run Text=&quot;Desarrollado por &quot;/&gt;&lt;Hyperlink NavigateUri=&quot;http://www.scientia.com.ar&quot; RequestNavigate=&quot;Hyperlink_RequestNavigate&quot;&gt;&lt;Run Text=&quot;Scientia® Soluciones Informáticas&quot;/&gt;&lt;/Hyperlink&gt;&lt;/TextBlock&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;</pre>
+<p>Y el código C# es el que muestro a continuación:</p>
+<pre class="brush: csharp; title: ; notranslate" title="">using System;
+using System.Diagnostics;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Navigation;
+using Microsoft.WindowsAPICodePack.Taskbar;
+
+namespace TaskBarProgress
+{
+    /// &lt;summary&gt;
+    /// Interaction logic for Window1.xaml
+    /// &lt;/summary&gt;
+    public partial class Window1 : Window
+    {
+        private TaskbarManager windowsTaskbar = TaskbarManager.Instance;
+
+        public Window1()
+        {
+            if ((Environment.OSVersion.Version.Major &lt; 6) ||
+               (Environment.OSVersion.Version.Major == 6 &amp;&amp; Environment.OSVersion.Version.Minor &lt; 1))
+            {
+                MessageBox.Show(&quot;Esta aplicación de ejemplo requiere Windows® 7 o superior para correr&quot;,
+                    &quot;Scientia® Soluciones Informáticas&quot;,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+                Close();
+            }
+            else
+                InitializeComponent();
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs&lt;double&gt; e)
+        {
+            if (ComboBox1.SelectedIndex != 4)
+                windowsTaskbar.SetProgressValue(Convert.ToInt32(e.NewValue), 100, this);
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch ((sender as ComboBox).SelectedIndex)
+            {
+                case 0: //Normal
+                    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Normal, this);
+                    break;
+                case 1: //Pausado
+                    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Paused, this);
+                    break;
+                case 2: //Con error
+                    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Error, this);
+                    break;
+                case 3: //Indeterminado
+                    windowsTaskbar.SetProgressState(TaskbarProgressBarState.Indeterminate, this);
+                    return;
+                case 4: //Sin progreso
+                    windowsTaskbar.SetProgressState(TaskbarProgressBarState.NoProgress, this);
+                    return;
+            }
+
+            windowsTaskbar.SetProgressValue(Convert.ToInt32(Slider1.Value), 100, this);
+        }
+    }
+}</pre>
+<p>Obviamente todo el código mostrado funciona solamente sobre Windows® 7 por cual, si queremos hacer una aplicación que también sea compatible con versiones anteriores del sistema operativo, nos conviene verificar la versión de éste antes de utilizar estas características. Esto se puede hacer de la siguiente forma:</p>
+<pre class="brush: csharp; title: ; notranslate" title="">if ((Environment.OSVersion.Version.Major &gt; 6) ||
+    (Environment.OSVersion.Version.Major == 6 &amp;&amp; Environment.OSVersion.Version.Minor &gt;= 1)) {
+        //Es Windows 7 o superior
+} else {
+        //Es un sistema operativo anterior a Windows® 7
+}</pre>
+<p><a href="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2009/09/taskbarprogress.zip"><img loading="lazy" decoding="async" data-attachment-id="10" data-permalink="https://www.programandoamedianoche.com/2008/06/deshabilitar-controles-de-la-pagina-hasta-que-finalicen-los-updatepanels/download/" data-orig-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2008/07/download.gif" data-orig-size="40,42" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Descargar proyecto de ejemplo" data-image-description="&lt;p&gt;Descargar proyecto de ejemplo&lt;/p&gt;
+" data-image-caption="" data-medium-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2008/07/download.gif" data-large-file="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2008/07/download.gif" class="alignnone size-full wp-image-10" title="Proyecto de ejemplo de la utilización de la API de Windows 7 para cambiar el estado y progreso de una aplicación" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2008/07/download.gif" alt="Proyecto de ejemplo de la utilización de la API de Windows 7 para cambiar el estado y progreso de una aplicación" width="40" height="42" align="left" hspace="6" /></a>Por último les dejo una solución con un proyecto WPF y otro con Windows Forms donde se muestra como utilizar esta funcionalidad.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Comparte esto:</h3><div class="sd-content"><ul><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon no-text" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#print" target="_blank" title="Haz clic para imprimir" ><span></span><span class="sharing-screen-reader-text">Haz clic para imprimir (Se abre en una ventana nueva)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-620" class="share-twitter sd-button share-icon no-text" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/?share=twitter" target="_blank" title="Haz clic para compartir en Twitter" ><span></span><span class="sharing-screen-reader-text">Haz clic para compartir en Twitter (Se abre en una ventana nueva)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-620" class="share-facebook sd-button share-icon no-text" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/?share=facebook" target="_blank" title="Haz clic para compartir en Facebook" ><span></span><span class="sharing-screen-reader-text">Haz clic para compartir en Facebook (Se abre en una ventana nueva)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-620" class="share-linkedin sd-button share-icon no-text" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/?share=linkedin" target="_blank" title="Haz clic para compartir en LinkedIn" ><span></span><span class="sharing-screen-reader-text">Haz clic para compartir en LinkedIn (Se abre en una ventana nueva)</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/?share=reddit" target="_blank" title="Haz clic para compartir en Reddit" ><span></span><span class="sharing-screen-reader-text">Haz clic para compartir en Reddit (Se abre en una ventana nueva)</span></a></li><li class="share-telegram"><a rel="nofollow noopener noreferrer" data-shared="" class="share-telegram sd-button share-icon no-text" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/?share=telegram" target="_blank" title="Haz clic para compartir en Telegram" ><span></span><span class="sharing-screen-reader-text">Haz clic para compartir en Telegram (Se abre en una ventana nueva)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/?share=jetpack-whatsapp" target="_blank" title="Haz clic para compartir en WhatsApp" ><span></span><span class="sharing-screen-reader-text">Haz clic para compartir en WhatsApp (Se abre en una ventana nueva)</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon no-text" href="mailto:?subject=%5BEntrada%20compartida%5D%20Barra%20de%20progreso%20en%20el%20%C3%ADcono%20de%20la%20aplicaci%C3%B3n%20en%20la%20barra%20de%20tareas%20de%20Windows%C2%AE%207&body=https%3A%2F%2Fwww.programandoamedianoche.com%2F2009%2F09%2Fprogreso-en-el-icono-de-la-aplicacion-en-windows-7%2F&share=email" target="_blank" title="Haz clic para enviar un enlace por correo electrónico a un amigo" data-email-share-error-title="¿Tienes un correo electrónico configurado?" data-email-share-error-text="Si tienes problemas al compartir por correo electrónico, es posible que sea porque no tengas un correo electrónico configurado en tu navegador. Puede que tengas que crear un nuevo correo electrónico tú mismo." data-email-share-nonce="7f60307682" data-email-share-track-url="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/?share=email"><span></span><span class="sharing-screen-reader-text">Haz clic para enviar un enlace por correo electrónico a un amigo (Se abre en una ventana nueva)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-68103080-620-67e066ba2775e' data-src='https://widgets.wp.com/likes/?ver=14.4.1#blog_id=68103080&amp;post_id=620&amp;origin=www.programandoamedianoche.com&amp;obj_id=68103080-620-67e066ba2775e' data-name='like-post-frame-68103080-620-67e066ba2775e' data-title='Me gusta o Compartir'><h3 class="sd-title">Me gusta esto:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Me gusta</span></span> <span class="loading">Cargando...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Relacionado</em></h3>
+</div></div>
+		  <p class="postMeta"><small>Categoria <a href="https://www.programandoamedianoche.com/category/net/windows-forms/" rel="category tag">Windows Forms</a>, <a href="https://www.programandoamedianoche.com/category/net/wpf/" rel="category tag">WPF</a> | Etiquetas: </small></p>
+    </div>
+    <div class="post-link">
+ 		<div class="pagination-newer"><a href="https://www.programandoamedianoche.com/2009/09/indices-filtrados-en-sql-server-2008/" rel="next">Índices filtrados en SQL Server 2008</a></div>
+		<div class=" pagination-older"><a href="https://www.programandoamedianoche.com/2009/09/hipervinculo-en-wpf/" rel="prev">Hipervínculo en WPF</a></div>
+	</div>
+	
+		<h2 id="comments"><a href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#comments" class="comments-link" >1 comentario</a>		
+						<a href="#postcomment" title="Deje un comentario">&raquo;</a>
+					</h2>
+					<ol id="commentlist">
+						<li class="comment even thread-even depth-1" id="comment-15772">
+				<div id="div-comment-15772" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/e444454f356b89cdde485467418f2f9b?s=32&#038;d=mm&#038;r=g' srcset="https://secure.gravatar.com/avatar/e444454f356b89cdde485467418f2f9b?s=64&#038;d=mm&#038;r=g 2x" class='avatar avatar-32 photo' height='32' width='32' loading='lazy' decoding='async'/>			<cite class="fn">Danny</cite> <span class="says">dice:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.programandoamedianoche.com/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#comment-15772">14 junio 2018 a las 17:36</a>		</div>
+
+		<p>Hay alguna dll de windows que pueda invocar el uso por medio de función externa.</p>
+<div class='jetpack-comment-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-comment-wrapper-68103080-15772-67e066ba28b85' data-src='https://widgets.wp.com/likes/#blog_id=68103080&amp;comment_id=15772&amp;origin=www.programandoamedianoche.com&amp;obj_id=68103080-15772-67e066ba28b85' data-name='like-comment-frame-68103080-15772-67e066ba28b85'>
+<div class='likes-widget-placeholder comment-likes-widget-placeholder comment-likes'><span class='loading'>Cargando...</span></div>
+<div class='comment-likes-widget jetpack-likes-widget comment-likes'><span class='comment-like-feedback'></span><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+</div>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-15772" data-commentid="15772" data-postid="620" data-belowelement="div-comment-15772" data-respondelement="respond" data-replyto="Responder a Danny" aria-label="Responder a Danny">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+ 
+											</ol>
+
+
+
+
+
+<div class="type-post">
+	
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Deja un comentario<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2009/09/progreso-en-el-icono-de-la-aplicacion-en-windows-7/#respond" style="display:none;">Cancelar respuesta</a></small></h3>			<form id="commentform" class="comment-form">
+				<iframe
+					title="Formulario de comentarios"
+					src="https://jetpack.wordpress.com/jetpack-comment/?blogid=68103080&#038;postid=620&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=mystery&#038;greeting=Deja+un+comentario&#038;jetpack_comments_nonce=dee9a85924&#038;greeting_reply=Responder+a+%25s&#038;color_scheme=light&#038;lang=es_ES&#038;jetpack_version=14.4.1&#038;iframe_unique_id=1&#038;show_cookie_consent=10&#038;has_cookie_consent=0&#038;is_current_user_subscribed=0&#038;token_key=%3Bnormal%3B&#038;sig=1c3d54eaa8dfa359428a7efbc2b40e6b480a1bf5#parent=https%3A%2F%2Fwww.programandoamedianoche.com%2F2009%2F09%2Fprogreso-en-el-icono-de-la-aplicacion-en-windows-7%2F"
+											name="jetpack_remote_comment"
+						style="width:100%; height: 430px; border:0;"
+										class="jetpack_remote_comment"
+					id="jetpack_remote_comment"
+					sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups"
+				>
+									</iframe>
+									<!--[if !IE]><!-->
+					
+					<!--<![endif]-->
+							</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		<p class="akismet_comment_form_privacy_notice">Este sitio usa Akismet para reducir el spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener"> Aprende cómo se procesan los datos de tus comentarios.</a></p></div>
+
+    </div>
+</td><td valign="top">
+    <div id="secondaryContent">
+        <div class="wrap">
+
+	
+		<div class="sidebaritem"><h3 class="widget-title">Buscar</h3> <form id="searchform" method="get" action="https://www.programandoamedianoche.com">
+	    <div>
+		    <input type="text" name="s" id="s" size="25" />
+		    <input type="submit" value="Buscar" id="error-search" />
+	    </div>
+	    </form>
+</div><div class="sidebaritem">			<div class="textwidget"><table><tr>
+
+<!-- Programando a medianoche - texto -->
+<td><ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-6957500945550809"
+     data-ad-slot="2600595951"></ins>
+
+</td>
+
+<!-- Programando a medianoche - grafico -->
+<td><ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-6957500945550809"
+     data-ad-slot="3747560055"></ins>
+
+</td>
+
+</tr></table></div>
+		</div>
+		<div class="sidebaritem">
+		<h3 class="widget-title">Entradas recientes</h3>
+		<ul>
+											<li>
+					<a href="https://www.programandoamedianoche.com/2023/07/guia-completa-de-selectores-de-css3/">Guía completa de selectores de CSS3</a>
+									</li>
+											<li>
+					<a href="https://www.programandoamedianoche.com/2023/02/comparar-imagenes-con-opencv-y-net/">Comparar imágenes con OpenCV y .net</a>
+									</li>
+											<li>
+					<a href="https://www.programandoamedianoche.com/2022/07/como-convertir-tu-web-wordpress-en-una-pwa-utilizando-superpwa/">Cómo convertir tu web WordPress en una PWA utilizando SuperPWA</a>
+									</li>
+											<li>
+					<a href="https://www.programandoamedianoche.com/2021/09/publicar-una-aplicacion-xamarin-en-app-store/">Publicar una aplicación Xamarin en App Store</a>
+									</li>
+											<li>
+					<a href="https://www.programandoamedianoche.com/2020/08/introduccion-a-angular-10-y-primeros-pasos/">Introducción a Angular 10 y primeros pasos.</a>
+									</li>
+					</ul>
+
+		</div><div class="sidebaritem">			<div class="textwidget"><!-- Lista de publicidades -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-6957500945550809"
+     data-ad-slot="4085087736"></ins>
+</div>
+		</div>
+	
+</div>
+      </div>
+</td></tr></table>
+<center>
+</center>      <div id="footer"><table style="max-width: 80%"><tr><td class="footerCC"><a rel="license" href="http://creativecommons.org/licenses/by-nd/2.5/ar/"><img alt="Creative Commons License" style="border-width:0;width 85px;height:15px;margin-right:5px;" src="https://i.creativecommons.org/l/by-nd/2.5/ar/80x15.png" /></a></td><td valign="middle"><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" property="dc:title" rel="dc:type">Programando a medianoche</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.scientia.com.ar" property="cc:attributionName" rel="cc:attributionURL" target="_blank" title="Sitio oficial de Scientia&#174; Soluciones Inform&#225;ticas">Scientia&#174; Soluciones Inform&#225;ticas</a> est&#225; licenciada bajo una <a rel="license" target="_blank" title="Licencia Creative Commons Atribuci&#243;n 2.5 Argentina" href="http://creativecommons.org/licenses/by/2.5/ar/">Licencia Creative Commons Atribuci&#243;n 2.5 Argentina</a>.</td></tr>
+<tr><td valign="middle" colspan="2"><a href="/politica-de-privacidad/">Política de privacidad</a></td></tr>
+</table></div>		<div class="jetpack-instant-search__widget-area" style="display: none">
+					</div>
+		
+<!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
+<div id="cmplz-cookiebanner-container"><div class="cmplz-cookiebanner cmplz-hidden banner-1 bottom-right-view-preferences optin cmplz-bottom-right cmplz-categories-type-view-preferences" aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optin" aria-describedby="cmplz-message-1-optin">
+	<div class="cmplz-header">
+		<div class="cmplz-logo"></div>
+		<div class="cmplz-title" id="cmplz-header-1-optin">Gestión del consentimiento de las cookies</div>
+		<div class="cmplz-close" tabindex="0" role="button" aria-label="Cerrar ventana">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</div>
+	</div>
+
+	<div class="cmplz-divider cmplz-divider-header"></div>
+	<div class="cmplz-body">
+		<div class="cmplz-message" id="cmplz-message-1-optin">Utilizamos tecnologías como las cookies para almacenar y/o acceder a la información del dispositivo. Lo hacemos para mejorar la experiencia de navegación y para mostrar anuncios personalizados. El consentimiento a estas tecnologías nos permitirá procesar datos como el comportamiento de navegación o los ID's únicos en este sitio. No consentir o retirar el consentimiento, puede afectar negativamente a ciertas características y funciones.</div>
+		<!-- categories start -->
+		<div class="cmplz-categories">
+			<details class="cmplz-category cmplz-functional" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Funcional</span>
+							<span class='cmplz-always-active'>
+								<span class="cmplz-banner-checkbox">
+									<input type="checkbox"
+										   id="cmplz-functional-optin"
+										   data-category="cmplz_functional"
+										   class="cmplz-consent-checkbox cmplz-functional"
+										   size="40"
+										   value="1"/>
+									<label class="cmplz-label" for="cmplz-functional-optin" tabindex="0"><span class="screen-reader-text">Funcional</span></label>
+								</span>
+								Siempre activo							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-functional">El almacenamiento o acceso técnico es estrictamente necesario para el propósito legítimo de permitir el uso de un servicio específico explícitamente solicitado por el abonado o usuario, o con el único propósito de llevar a cabo la transmisión de una comunicación a través de una red de comunicaciones electrónicas.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-preferences" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Preferencias</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-preferences-optin"
+									   data-category="cmplz_preferences"
+									   class="cmplz-consent-checkbox cmplz-preferences"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-preferences-optin" tabindex="0"><span class="screen-reader-text">Preferencias</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-preferences">El almacenamiento o acceso técnico es necesario para la finalidad legítima de almacenar preferencias no solicitadas por el abonado o usuario.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-statistics" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Estadísticas</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-statistics-optin"
+									   data-category="cmplz_statistics"
+									   class="cmplz-consent-checkbox cmplz-statistics"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-statistics-optin" tabindex="0"><span class="screen-reader-text">Estadísticas</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-statistics">El almacenamiento o acceso técnico que se utiliza exclusivamente con fines estadísticos.</span>
+					<span class="cmplz-description-statistics-anonymous">El almacenamiento o acceso técnico que se utiliza exclusivamente con fines estadísticos anónimos. Sin un requerimiento, el cumplimiento voluntario por parte de tu Proveedor de servicios de Internet, o los registros adicionales de un tercero, la información almacenada o recuperada sólo para este propósito no se puede utilizar para identificarte.</span>
+				</div>
+			</details>
+			<details class="cmplz-category cmplz-marketing" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Marketing</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-marketing-optin"
+									   data-category="cmplz_marketing"
+									   class="cmplz-consent-checkbox cmplz-marketing"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-marketing-optin" tabindex="0"><span class="screen-reader-text">Marketing</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-marketing">El almacenamiento o acceso técnico es necesario para crear perfiles de usuario para enviar publicidad, o para seguir al usuario en un sitio web o en varios sitios web con fines de marketing similares.</span>
+				</div>
+			</details>
+		</div><!-- categories end -->
+			</div>
+
+	<div class="cmplz-links cmplz-information">
+		<a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Administrar opciones</a>
+		<a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview">Gestionar los servicios</a>
+		<a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper">Gestionar {vendor_count} proveedores</a>
+		<a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/">Leer más sobre estos propósitos</a>
+			</div>
+
+	<div class="cmplz-divider cmplz-footer"></div>
+
+	<div class="cmplz-buttons">
+		<button class="cmplz-btn cmplz-accept">Aceptar</button>
+		<button class="cmplz-btn cmplz-deny">Denegar</button>
+		<button class="cmplz-btn cmplz-view-preferences">Ver preferencias</button>
+		<button class="cmplz-btn cmplz-save-preferences">Guardar preferencias</button>
+		<a class="cmplz-btn cmplz-manage-options tcf cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Ver preferencias</a>
+			</div>
+
+	<div class="cmplz-links cmplz-documents">
+		<a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a>
+			</div>
+
+</div>
+</div>
+					<div id="cmplz-manage-consent" data-nosnippet="true"><button class="cmplz-btn cmplz-hidden cmplz-manage-consent manage-consent-1">Manage consent</button>
+
+</div>	<div style="display:none">
+			<div class="grofile-hash-map-e444454f356b89cdde485467418f2f9b">
+		</div>
+		</div>
+				<!-- Fragmento de código de Google Tag Manager (noscript) añadido por Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR9S9CP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- Final del fragmento de código de Google Tag Manager (noscript) añadido por Site Kit -->
+				<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Cambiar la visibilidad de los metadatos de las fotos">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Cambiar la visibilidad de los comentarios de las fotos">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="Esta imagen tiene comentarios."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Cargando comentarios...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Escribe un comentario...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Escribe un comentario..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Correo electrónico (Obligatorio)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Nombre (Obligatorio)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Web</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Publicar comentario" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" href="#" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	
+				
+
+<link rel='stylesheet' id='all-css-03162fe24375fb11e9e216582cbb07dc' href='https://www.programandoamedianoche.com/wp-content/boost-cache/static/9d412241a0.min.css' type='text/css' media='all' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20250323#ver=20250323&#038;lang=es' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars' role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+			
+		<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script><script data-service="linkedin" data-category="marketing" data-cmplz-src="//platform.linkedin.com/in.js" type="text/plain"></script><script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.programandoamedianoche.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=a34fa2258e0d811e09b85f8421741221"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script><script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script><script type='text/javascript' src='https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?m=1741823103'></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-M6P6D5G" id="google_gtagjs-js" async></script><script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.programandoamedianoche.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-M6P6D5G");
+/* ]]> */
+</script><script type="text/javascript">
+/* <![CDATA[ */
+
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-MR9S9CP' );
+			
+/* ]]> */
+</script><script type="text/javascript" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6957500945550809&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous"></script><script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script><script>(adsbygoogle = window.adsbygoogle || []).push({});
+</script><script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><script type="text/javascript"><!--
+google_ad_client = "ca-pub-6957500945550809";
+/* Grande */
+google_ad_slot = "8466383713";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script><script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.programandoamedianoche.com\/2009\/09\/progreso-en-el-icono-de-la-aplicacion-en-windows-7\/":620};
+	</script><script type='text/javascript' src='https://www.programandoamedianoche.com/wp-content/boost-cache/static/b767f5a43d.min.js'></script><script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/styles/shCore.css?ver=2.1.364";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.head.appendChild( corecss );
+		var themecssurl = "https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/styles/shThemeDefault.css?ver=2.1.364";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		document.head.appendChild( themecss );
+	})();
+	SyntaxHighlighter.config.clipboardSwf = 'https://www.programandoamedianoche.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter2/scripts/clipboard.swf';
+	SyntaxHighlighter.config.strings.expandSource = 'mostrar el código';
+	SyntaxHighlighter.config.strings.viewSource = 'ver el código';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'copiar al portapapeles';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation = 'El código está ahora en tu portapapeles';
+	SyntaxHighlighter.config.strings.print = 'imprimir';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'No se encuentra el pincel para:';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'El pincel no está configurado para la opción html-script:';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script><script type='text/javascript' src='https://www.programandoamedianoche.com/wp-content/boost-cache/static/4404028271.min.js'></script><script type="text/javascript" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script><script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script><script type="text/javascript" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/jetpack-boost/jetpack_vendor/automattic/jetpack-assets/build/i18n-loader.js?minify=true&amp;ver=becd7d9884bc1b331e45" id="wp-jp-i18n-loader-js"></script><script type="text/javascript" id="wp-jp-i18n-loader-js-after">
+/* <![CDATA[ */
+wp.jpI18nLoader.state = {"baseUrl":"https://www.programandoamedianoche.com/wp-content/languages/","locale":"es_ES","domainMap":{"jetpack-admin-ui":"plugins/jetpack-boost","jetpack-assets":"plugins/jetpack-boost","jetpack-boost-core":"plugins/jetpack-boost","jetpack-boost-speed-score":"plugins/jetpack-boost","jetpack-config":"plugins/jetpack-boost","jetpack-connection":"plugins/jetpack-boost","jetpack-explat":"plugins/jetpack-boost","jetpack-image-cdn":"plugins/jetpack-boost","jetpack-ip":"plugins/jetpack-boost","jetpack-jitm":"plugins/jetpack-boost","jetpack-licensing":"plugins/jetpack-boost","jetpack-my-jetpack":"plugins/jetpack-boost","jetpack-password-checker":"plugins/jetpack-boost","jetpack-plugin-deactivation":"plugins/jetpack-boost","jetpack-plugins-installer":"plugins/jetpack-boost","jetpack-protect-models":"plugins/jetpack-boost","jetpack-protect-status":"plugins/jetpack-boost","jetpack-schema":"plugins/jetpack-boost","jetpack-sync":"plugins/jetpack-boost","jetpack-wp-js-data-sync":"plugins/jetpack-boost","jetpack-transport-helper":"plugins/jetpack-protect","jetpack-waf":"plugins/jetpack","jetpack-backup-pkg":"plugins/jetpack","jetpack-blaze":"plugins/jetpack","jetpack-classic-theme-helper":"plugins/jetpack","jetpack-compat":"plugins/jetpack","jetpack-external-media":"plugins/jetpack","jetpack-forms":"plugins/jetpack","jetpack-import":"plugins/jetpack","jetpack-masterbar":"plugins/jetpack","jetpack-post-list":"plugins/jetpack","jetpack-publicize-pkg":"plugins/jetpack","jetpack-search-pkg":"plugins/jetpack","jetpack-stats":"plugins/jetpack","jetpack-stats-admin":"plugins/jetpack","jetpack-videopress-pkg":"plugins/jetpack","jetpack-wordads":"plugins/jetpack","woocommerce-analytics":"plugins/jetpack"},"domainPaths":{"jetpack-admin-ui":"jetpack_vendor/automattic/jetpack-admin-ui/","jetpack-assets":"jetpack_vendor/automattic/jetpack-assets/","jetpack-boost-core":"jetpack_vendor/automattic/jetpack-boost-core/","jetpack-boost-speed-score":"jetpack_vendor/automattic/jetpack-boost-speed-score/","jetpack-config":"jetpack_vendor/automattic/jetpack-config/","jetpack-connection":"jetpack_vendor/automattic/jetpack-connection/","jetpack-explat":"jetpack_vendor/automattic/jetpack-explat/","jetpack-image-cdn":"jetpack_vendor/automattic/jetpack-image-cdn/","jetpack-ip":"jetpack_vendor/automattic/jetpack-ip/","jetpack-jitm":"jetpack_vendor/automattic/jetpack-jitm/","jetpack-licensing":"jetpack_vendor/automattic/jetpack-licensing/","jetpack-my-jetpack":"jetpack_vendor/automattic/jetpack-my-jetpack/","jetpack-password-checker":"jetpack_vendor/automattic/jetpack-password-checker/","jetpack-plugin-deactivation":"jetpack_vendor/automattic/jetpack-plugin-deactivation/","jetpack-plugins-installer":"jetpack_vendor/automattic/jetpack-plugins-installer/","jetpack-protect-models":"jetpack_vendor/automattic/jetpack-protect-models/","jetpack-protect-status":"jetpack_vendor/automattic/jetpack-protect-status/","jetpack-schema":"jetpack_vendor/automattic/jetpack-schema/","jetpack-sync":"jetpack_vendor/automattic/jetpack-sync/","jetpack-wp-js-data-sync":"jetpack_vendor/automattic/jetpack-wp-js-data-sync/","jetpack-transport-helper":"jetpack_vendor/automattic/jetpack-transport-helper/","jetpack-waf":"jetpack_vendor/automattic/jetpack-waf/","jetpack-backup-pkg":"jetpack_vendor/automattic/jetpack-backup/","jetpack-blaze":"jetpack_vendor/automattic/jetpack-blaze/","jetpack-classic-theme-helper":"jetpack_vendor/automattic/jetpack-classic-theme-helper/","jetpack-compat":"jetpack_vendor/automattic/jetpack-compat/","jetpack-external-media":"jetpack_vendor/automattic/jetpack-external-media/","jetpack-forms":"jetpack_vendor/automattic/jetpack-forms/","jetpack-import":"jetpack_vendor/automattic/jetpack-import/","jetpack-masterbar":"jetpack_vendor/automattic/jetpack-masterbar/","jetpack-post-list":"jetpack_vendor/automattic/jetpack-post-list/","jetpack-publicize-pkg":"jetpack_vendor/automattic/jetpack-publicize/","jetpack-search-pkg":"jetpack_vendor/automattic/jetpack-search/","jetpack-stats":"jetpack_vendor/automattic/jetpack-stats/","jetpack-stats-admin":"jetpack_vendor/automattic/jetpack-stats-admin/","jetpack-videopress-pkg":"jetpack_vendor/automattic/jetpack-videopress/","jetpack-wordads":"jetpack_vendor/automattic/jetpack-wordads/","woocommerce-analytics":"jetpack_vendor/automattic/woocommerce-analytics/"}};
+/* ]]> */
+</script><script type='text/javascript' src='https://www.programandoamedianoche.com/wp-content/boost-cache/static/38a6cee1ad.min.js'></script><script type="text/javascript" id="jetpack-instant-search-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "jetpack-search-pkg", {"translation-revision-date":"2025-02-26 20:47:09+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"Price: high to low":["Precio: De mayor a menor"],"Price: low to high":["Precio: De menor a mayor"],"Oldest":["M\u00e1s antiguo"],"Relevance":["Relevancia"],"Rating":["Valoraci\u00f3n"],"Newest":["Nuevos"]}},"comment":{"reference":"jetpack_vendor\/automattic\/jetpack-search\/build\/instant-search\/jp-search.js"}} );
+/* ]]> */
+</script><script type="text/javascript" id="jetpack-instant-search-js-before">
+/* <![CDATA[ */
+var JetpackInstantSearchOptions=JSON.parse(decodeURIComponent("%7B%22overlayOptions%22%3A%7B%22colorTheme%22%3A%22light%22%2C%22enableInfScroll%22%3Atrue%2C%22enableFilteringOpensOverlay%22%3Atrue%2C%22enablePostDate%22%3Atrue%2C%22enableSort%22%3Atrue%2C%22highlightColor%22%3A%22%23FFC%22%2C%22overlayTrigger%22%3A%22submit%22%2C%22resultFormat%22%3A%22expanded%22%2C%22showPoweredBy%22%3Atrue%2C%22defaultSort%22%3A%22relevance%22%2C%22excludedPostTypes%22%3A%5B%22attachment%22%5D%7D%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fwww.programandoamedianoche.com%22%2C%22locale%22%3A%22es-ES%22%2C%22postsPerPage%22%3A15%2C%22siteId%22%3A68103080%2C%22postTypes%22%3A%7B%22post%22%3A%7B%22singular_name%22%3A%22Entrada%22%2C%22name%22%3A%22Entradas%22%7D%2C%22page%22%3A%7B%22singular_name%22%3A%22P%5Cu00e1gina%22%2C%22name%22%3A%22P%5Cu00e1ginas%22%7D%2C%22attachment%22%3A%7B%22singular_name%22%3A%22Medios%22%2C%22name%22%3A%22Medios%22%7D%7D%2C%22webpackPublicPath%22%3A%22https%3A%5C%2F%5C%2Fwww.programandoamedianoche.com%5C%2Fwp-content%5C%2Fplugins%5C%2Fjetpack%5C%2Fjetpack_vendor%5C%2Fautomattic%5C%2Fjetpack-search%5C%2Fbuild%5C%2Finstant-search%5C%2F%22%2C%22isPhotonEnabled%22%3Afalse%2C%22isFreePlan%22%3Atrue%2C%22apiRoot%22%3A%22https%3A%5C%2F%5C%2Fwww.programandoamedianoche.com%5C%2Fwp-json%5C%2F%22%2C%22apiNonce%22%3A%225243c0bc61%22%2C%22isPrivateSite%22%3Afalse%2C%22isWpcom%22%3Afalse%2C%22hasOverlayWidgets%22%3Afalse%2C%22widgets%22%3A%5B%5D%2C%22widgetsOutsideOverlay%22%3A%5B%5D%2C%22hasNonSearchWidgets%22%3Afalse%2C%22preventTrackingCookiesReset%22%3Afalse%7D"));
+/* ]]> */
+</script><script type="text/javascript" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-search/build/instant-search/jp-search.js?minify=false&amp;ver=749aa845a5ccb16bc8a6" id="jetpack-instant-search-js"></script><script data-service="jetpack-statistics" data-category="statistics" type="text/plain" data-cmplz-src="//stats.wp.com/w.js?ver=202512" id="jp-tracks-js"></script><script type="text/javascript" src="https://secure.gravatar.com/js/gprofiles.js?ver=202512" id="grofiles-cards-js"></script><script type="text/javascript" id="wpgroho-js-extra">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script><script type='text/javascript' src='https://www.programandoamedianoche.com/wp-content/boost-cache/static/807b6658d7.min.js'></script><script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"68103080\",\"post\":\"620\",\"tz\":\"-3\",\"srv\":\"www.programandoamedianoche.com\",\"j\":\"1:14.4.1\"}") ]);
+_stq.push([ "clickTrackerInit", "68103080", "620" ]);
+/* ]]> */
+</script><script data-service="jetpack-statistics" data-category="statistics" type="text/plain" data-cmplz-src="https://stats.wp.com/e-202512.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script><script type="text/javascript" id="cmplz-cookiebanner-js-extra">
+/* <![CDATA[ */
+var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_ajax_content":"","banner_version":"44","version":"7.3.1","store_consent":"","do_not_track_enabled":"","consenttype":"optin","region":"eu","geoip":"","dismiss_timeout":"","disable_cookiebanner":"","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https:\/\/www.programandoamedianoche.com\/wp-json\/complianz\/v1\/","locale":"lang=es&locale=es_ES","set_cookies_on_root":"","cookie_domain":"","current_policy_id":"26","cookie_path":"\/","categories":{"statistics":"estad\u00edsticas","marketing":"m\u00e1rketing"},"tcf_active":"","placeholdertext":"Haz clic para aceptar cookies de marketing y permitir este contenido","css_file":"https:\/\/www.programandoamedianoche.com\/wp-content\/uploads\/complianz\/css\/banner-{banner_id}-{type}.css?v=44","page_links":{"eu":{"cookie-statement":{"title":"","url":"https:\/\/www.programandoamedianoche.com\/2009\/09\/progreso-en-el-icono-de-la-aplicacion-en-windows-7\/"},"privacy-statement":{"title":"Pol\u00edtica de privacidad","url":"https:\/\/www.programandoamedianoche.com\/politica-de-privacidad\/"}}},"tm_categories":"","forceEnableStats":"","preview":"","clean_cookies":"","aria_label":"Haz clic para aceptar cookies de marketing y permitir este contenido"};
+/* ]]> */
+</script><script defer type="text/javascript" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1741823097" id="cmplz-cookiebanner-js"></script><script type="text/javascript" id="cmplz-cookiebanner-js-after">
+/* <![CDATA[ */
+	let cmplzBlockedContent = document.querySelector('.cmplz-blocked-content-notice');
+	if ( cmplzBlockedContent) {
+	        cmplzBlockedContent.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+	}
+    
+/* ]]> */
+</script><script type="text/javascript" id="jetpack-carousel-js-extra">
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"https:\/\/www.programandoamedianoche.com\/wp-content\/plugins\/jetpack\/_inc\/build\/carousel\/swiper-bundle.min.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"es","ajaxurl":"https:\/\/www.programandoamedianoche.com\/wp-admin\/admin-ajax.php","nonce":"8564227dd3","display_exif":"1","display_comments":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comentario","post_comment":"Publicar comentario","write_comment":"Escribe un comentario...","loading_comments":"Cargando comentarios...","image_label":"Abre la imagen a pantalla completa.","download_original":"Ver tama\u00f1o completo <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Por favor, aseg\u00farate de enviar el texto con tu comentario.","no_comment_email":"Por favor, proporciona una direcci\u00f3n de correo electr\u00f3nico para comentar.","no_comment_author":"Por favor, a\u00f1ade tu nombre al comentario.","comment_post_error":"Lo sentimos, pero ha habido un error al publicar tu comentario. Por favor, vuelve a intentarlo m\u00e1s tarde.","comment_approved":"Se ha aprobado tu comentario.","comment_unapproved":"Tu comentario est\u00e1 en moderaci\u00f3n.","camera":"C\u00e1mara","aperture":"Abertura","shutter_speed":"Velocidad de obturaci\u00f3n","focal_length":"Longitud focal","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/www.programandoamedianoche.com\/wp-login.php?redirect_to=https%3A%2F%2Fwww.programandoamedianoche.com%2F2009%2F09%2Fprogreso-en-el-icono-de-la-aplicacion-en-windows-7%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"]};
+/* ]]> */
+</script><script type='text/javascript' src='https://www.programandoamedianoche.com/wp-content/boost-cache/static/6d24acaef4.min.js'></script><script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"es","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script><script type="text/javascript" src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=14.4.1" id="sharing-js-js"></script><script type="text/javascript" id="sharing-js-js-after">
+/* <![CDATA[ */
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-linkedin' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-linkedin' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-telegram' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-telegram' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtelegram', 'menubar=1,resizable=1,width=450,height=450' );
+						return false;
+					}
+				} );
+			} )();
+/* ]]> */
+</script><script type="text/javascript">
+			(function () {
+				const iframe = document.getElementById( 'jetpack_remote_comment' );
+								const watchReply = function() {
+					// Check addComment._Jetpack_moveForm to make sure we don't monkey-patch twice.
+					if ( 'undefined' !== typeof addComment && ! addComment._Jetpack_moveForm ) {
+						// Cache the Core function.
+						addComment._Jetpack_moveForm = addComment.moveForm;
+						const commentParent = document.getElementById( 'comment_parent' );
+						const cancel = document.getElementById( 'cancel-comment-reply-link' );
+
+						function tellFrameNewParent ( commentParentValue ) {
+							const url = new URL( iframe.src );
+							if ( commentParentValue ) {
+								url.searchParams.set( 'replytocom', commentParentValue )
+							} else {
+								url.searchParams.delete( 'replytocom' );
+							}
+							if( iframe.src !== url.href ) {
+								iframe.src = url.href;
+							}
+						};
+
+						cancel.addEventListener( 'click', function () {
+							tellFrameNewParent( false );
+						} );
+
+						addComment.moveForm = function ( _, parentId ) {
+							tellFrameNewParent( parentId );
+							return addComment._Jetpack_moveForm.apply( null, arguments );
+						};
+					}
+				}
+				document.addEventListener( 'DOMContentLoaded', watchReply );
+				// In WP 6.4+, the script is loaded asynchronously, so we need to wait for it to load before we monkey-patch the functions it introduces.
+				document.querySelector('#comment-reply-js')?.addEventListener( 'load', watchReply );
+
+								
+				const commentIframes = document.getElementsByClassName('jetpack_remote_comment');
+
+				window.addEventListener('message', function(event) {
+					if (event.origin !== 'https://jetpack.wordpress.com') {
+						return;
+					}
+
+					if (!event?.data?.iframeUniqueId && !event?.data?.height) {
+						return;
+					}
+
+					const eventDataUniqueId = event.data.iframeUniqueId;
+
+					// Change height for the matching comment iframe
+					for (let i = 0; i < commentIframes.length; i++) {
+						const iframe = commentIframes[i];
+						const url = new URL(iframe.src);
+						const iframeUniqueIdParam = url.searchParams.get('iframe_unique_id');
+						if (iframeUniqueIdParam == event.data.iframeUniqueId) {
+							iframe.style.height = event.data.height + 'px';
+							return;
+						}
+					}
+				});
+			})();
+		</script></body></html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Almacenamiento en caché de páginas con Disk: Enhanced 
+Red de entrega de contenidos mediante Windows Azure Storage: scientiait.blob.core.windows.net
+Minimizado usando Disk
+Caché de base de datos 15/162 consultas en 0.808 segundos usando Disk (En toda la solicitud modification query)
+
+Served from: www.programandoamedianoche.com @ 2025-03-23 16:53:30 by W3 Total Cache
+-->
